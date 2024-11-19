@@ -1,5 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import type { SocialLink } from "../types/config";
 
 type Props = SocialLink;
@@ -13,7 +15,8 @@ const { title, url, icon, external } = Astro.props;
   target={external ? "_blank" : "_self"}
 >
   <Icon name={icon} width={25} height={25} />
+  <!-- <FontAwesomeIcon icon={faXmark} width={25} height={25} /> -->
   <div>
-    <p>{title}</p>
+    <!-- <p>{title}</p> -->
   </div>
 </a>

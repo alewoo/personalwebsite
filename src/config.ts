@@ -9,26 +9,26 @@ import type {
 } from "./types/config";
 
 export const identity: Identity = {
-  name: "Tim Witzdam",
-  logo: "/logo.webp",
-  email: "tim@witzdam.com",
+  name: "alex wang",
+  logo: "/pfp.jpg",
+  email: "alexwang2023@gmail.com",
 };
 
 export const navBarLinks: NavBarLink[] = [
   {
-    title: "Home",
+    title: "home",
     url: "/",
   },
   {
-    title: "About",
+    title: "about",
     url: "/about",
   },
   {
-    title: "Projects",
+    title: "projects",
     url: "/projects",
   },
   {
-    title: "Blog",
+    title: "blog",
     url: "/blog",
   },
 ];
@@ -36,37 +36,43 @@ export const navBarLinks: NavBarLink[] = [
 export const socialLinks: SocialLink[] = [
   {
     title: "GitHub",
-    url: "https://github.com/TimWitzdam",
+    url: "https://github.com/alewoo",
     icon: "mdi:github",
     external: true,
   },
   {
-    title: "Mail",
-    url: "mailto:tim@witzdam.com",
-    icon: "mdi:email",
+    title: "LinkedIn",
+    url: "https://www.linkedin.com/in/alexwang-/",
+    icon: "mdi:linkedin",
+    external: true,
+  },
+  {
+    title: "Twitter",
+    url: "https://www.twitter.com/imalexwang",
+    icon: "mdi:twitter",
+    external: true,
   },
 ];
 
 // Home (/)
 export const homePageContent: HomePageContent = {
   seo: {
-    title: "Tim Witzdam",
+    title: "alex wang",
     description:
-      "Full time student from Germany who loves building cool things using code.",
+      "I'm a second-year Computer Science student at Georgia Tech that's passionate about the intersection of technology and business. I'm eager to drive innovation and foster change through my academic and entrepreneurial pursuits. My background in business, along with my involvement in music and other creative endeavors, equips me with a unique perspective to approach problems creatively and strategically. This blend of technical skills, entrepreneurial mindset, and creative experience positions me to excel and make meaningful contributions in the tech industry.",
     image: identity.logo,
   },
-  role: "Student & Software Developer",
-  description:
-    "I'm Tim Witzdam, a full time student from Germany who also loves building cool things using code.",
+  role: "cs @ georgia tech | director of ship it @ startup exchange | building cool things",
+  description: "20 y/o with a passion for startups, tech, and creativity.",
   socialLinks: socialLinks,
   links: [
     {
-      title: "My Projects",
-      url: "/projects",
+      title: "about",
+      url: "/about",
     },
     {
-      title: "About Me",
-      url: "/about",
+      title: "projects",
+      url: "/projects",
     },
   ],
 };
@@ -74,24 +80,25 @@ export const homePageContent: HomePageContent = {
 // About (/about)
 export const aboutPageContent: AboutPageContent = {
   seo: {
-    title: "About | Tim Witzdam",
+    title: "About | Alex Wang",
     description:
       "Full time student from Germany who loves building cool things using code.",
     image: identity.logo,
   },
-  subtitle: "Some information about myself",
+  subtitle: "some information about myself",
   about: {
     description: `
-I'm Tim Witzdam, a full time student from Germany who also loves building cool things using code.
+hi, i’m alex, a 20 y/o cs student at georgia tech on a mission to build, create, and inspire a better world.
 <br/><br/>
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque placeat est architecto tempora voluptatem sit suscipit aspernatur? <br/><br/>
-Facere quibusdam reiciendis, distinctio sunt praesentium error accusantium consectetur nemo vero officia itaque.`, // Markdown is supported
+i love building tools that solve meaningful problems, exploring creative outlets like music and photography, and working on projects that help and inspire people. driven by a passion for startups, tech, and creativity, i’m constantly redefining the boundaries of what’s possible.
+<br/><br/>
+i value doing the right thing, being a good human, and fostering genuine relationships. through cs, design, and creativity, i aim to make a positive impact and help change the world.`, // Markdown is supported
     image_l: {
-      url: "/demo-1.jpg",
+      url: "/pic1.JPG",
       alt: "Left Picture",
     },
     image_r: {
-      url: "/demo-1.jpg",
+      url: "/pic2.jpg",
       alt: "Right Picture",
     },
   },
@@ -127,7 +134,7 @@ Facere quibusdam reiciendis, distinctio sunt praesentium error accusantium conse
 // Projects (/projects)
 export const projectsPageContent: ProjectPageContent = {
   seo: {
-    title: "Projects | Tim Witzdam",
+    title: "Projects | Alex Wang",
     description: "Check out what I've been working on.",
     image: identity.logo,
   },
@@ -160,7 +167,7 @@ export const projectsPageContent: ProjectPageContent = {
 // Blog (/blog)
 export const blogPageContent: BlogPageContent = {
   seo: {
-    title: "Blog | Tim Witzdam",
+    title: "Blog | Alex Wang",
     description: "Thoughts, stories and ideas.",
     image: identity.logo,
   },
