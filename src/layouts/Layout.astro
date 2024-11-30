@@ -202,7 +202,9 @@ const { seo } = Astro.props;
 </style>
 
 <script>
-  window.onload = function() {
+  declare const particlesJS: any;
+  
+  window.addEventListener('load', function() {
     if (typeof particlesJS !== 'undefined') {
       particlesJS('particles-js', {
         particles: {
@@ -213,5 +215,5 @@ const { seo } = Astro.props;
         }
       });
     }
-  };
+  });
 </script>
