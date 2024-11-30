@@ -45,7 +45,7 @@ export type ResumeItem = {
   date: string;
 };
 
-export type AboutPageContent = {
+export interface AboutPageContent {
   seo: SEOInfo;
   subtitle: string;
   about: {
@@ -59,15 +59,15 @@ export type AboutPageContent = {
       alt: string;
     };
   };
-  work: {
+  work?: {
     description: string;
     items: ResumeItem[];
   };
-  connect: {
+  connect?: {
     description: string;
     links: SocialLink[];
   };
-};
+}
 
 export type Project = {
   title: string;

@@ -47,11 +47,13 @@ const { seo } = Astro.props;
   });
 
   document.addEventListener('astro:before-swap', () => {
-    document.querySelector('main').classList.add('fade-out');
+    const main = document.querySelector('main');
+    if (main) main.classList.add('fade-out');
   });
   
   document.addEventListener('astro:after-swap', () => {
-    document.querySelector('main').classList.add('fade-in');
+    const main = document.querySelector('main');
+    if (main) main.classList.add('fade-in');
   });
 </script>
 
@@ -66,7 +68,7 @@ const { seo } = Astro.props;
     <meta property="og:title" content={seo.title} />
     <meta property="og:description" content={seo.description} />
     <meta property="og:image" content={seo.image} />
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" is:inline></script>
+    <script is:inline src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   </head>
   <body>
     <header>
@@ -199,14 +201,17 @@ const { seo } = Astro.props;
   }
 </style>
 
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script>
-  particlesJS('particles-js', {
-    particles: {
-      number: { value: 80 },
-      opacity: { value: 0.1 },
-      size: { value: 3 },
-      line_linked: { enable: true, opacity: 0.05 }
+  window.onload = function() {
+    if (typeof particlesJS !== 'undefined') {
+      particlesJS('particles-js', {
+        particles: {
+          number: { value: 80 },
+          opacity: { value: 0.1 },
+          size: { value: 3 },
+          line_linked: { enable: true, opacity: 0.05 }
+        }
+      });
     }
-  });
+  };
 </script>
