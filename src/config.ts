@@ -27,10 +27,10 @@ export const navBarLinks: NavBarLink[] = [
     title: "projects",
     url: "/projects",
   },
-  {
-    title: "blog",
-    url: "/blog",
-  },
+  // {
+  //   title: "blog",
+  //   url: "/blog",
+  // },
 ];
 
 export const socialLinks: SocialLink[] = [
@@ -50,6 +50,12 @@ export const socialLinks: SocialLink[] = [
     title: "Twitter",
     url: "https://www.twitter.com/imalexwang",
     icon: "mdi:twitter",
+    external: true,
+  },
+  {
+    title: "SubStack",
+    url: "https://imalexwang.substack.com/",
+    icon: "mdi:blog",
     external: true,
   },
 ];
@@ -80,9 +86,8 @@ export const homePageContent: HomePageContent = {
 // About (/about)
 export const aboutPageContent: AboutPageContent = {
   seo: {
-    title: "About | Alex Wang",
-    description:
-      "Full time student from Germany who loves building cool things using code.",
+    title: "about",
+    description: "cs student at georgia tech",
     image: identity.logo,
   },
   subtitle: "some information about myself",
@@ -102,74 +107,76 @@ i value doing the right thing, being a good human, and fostering genuine relatio
       alt: "Right Picture",
     },
   },
-  work: {
-    description: `I've worked with a variety of technologies and tools to build cool things. Here are some of the projects I've worked on.`, // Markdown is supported
-    items: [
-      {
-        title: "Software Developer",
-        company: {
-          name: "Freelance",
-          image: "/logo.webp",
-          url: "https://github.com/TimWitzdam",
-        },
-        date: "2021 - Present",
-      },
-      {
-        title: "Software Developer",
-        company: {
-          name: "Freelance",
-          image: "/logo.webp",
-          url: "https://github.com/TimWitzdam",
-        },
-        date: "2019 - 2021",
-      },
-    ],
-  },
-  connect: {
-    description: `I'm always interested in meeting new people and learning new things. Feel free to connect with me on any of the following platforms.`, // Markdown is supported
-    links: socialLinks,
-  },
+  // work: {
+  //   description: `I've worked with a variety of technologies and tools to build cool things. Here are some of the projects I've worked on.`, // Markdown is supported
+  //   items: [
+  //     {
+  //       title: "Software Developer",
+  //       company: {
+  //         name: "Freelance",
+  //         image: "/logo.webp",
+  //         url: "https://github.com/TimWitzdam",
+  //       },
+  //       date: "2021 - Present",
+  //     },
+  //     {
+  //       title: "Software Developer",
+  //       company: {
+  //         name: "Freelance",
+  //         image: "/logo.webp",
+  //         url: "https://github.com/TimWitzdam",
+  //       },
+  //       date: "2019 - 2021",
+  //     },
+  //   ],
+  // },
+  // connect: {
+  //   description: `I'm always interested in meeting new people and learning new things. Feel free to connect with me on any of the following platforms.`, // Markdown is supported
+  //   links: socialLinks,
+  // },
 };
 
 // Projects (/projects)
 export const projectsPageContent: ProjectPageContent = {
   seo: {
-    title: "Projects | Alex Wang",
+    title: "projects",
     description: "Check out what I've been working on.",
     image: identity.logo,
   },
-  subtitle: "Check out what I've been working on.",
+  subtitle: "check out what I've been working on.",
   projects: [
     {
-      title: "Project 1",
-      description: "Project 1 Description",
-      image: "/demo-2.jpg",
-      year: "2024",
-      url: "https://github.com/TimWitzdam",
+      title: "bank customer churn predictor",
+      description:
+        "a machine learning model using Python and scikit-learn to predict bank customer churn rates based on customer data and behavior patterns.",
+      image: "/project1.png",
+      year: "nov 2024",
+      url: "https://github.com/alewoo/BankChurnPredictor",
     },
     {
-      title: "Project 1",
-      description: "Project 1 Description",
-      image: "/demo-2.jpg",
-      year: "2024",
-      url: "https://github.com/TimWitzdam",
+      title: "codebase rag chatbot",
+      description:
+        "an ai-powered chatbot that allows users to query and interact with codebases using natural language, built with pinecone for vector search and groq's llm for intelligent responses.",
+      image: "/project5.png",
+      year: "nov 2024",
+      url: "https://github.com/alewoo/codebase-rag-streamlit",
     },
-    {
-      title: "Project 1",
-      description: "Project 1 Description",
-      image: "/demo-2.jpg",
-      year: "2024",
-      url: "https://github.com/TimWitzdam",
-    },
+    // {
+    //   title: "Project 1",
+    //   description: "Project 1 Description",
+    //   image: "/demo-2.jpg",
+    //   year: "2024",
+    //   url: "https://github.com/TimWitzdam",
+    // },
   ],
 };
 
-// Blog (/blog)
-export const blogPageContent: BlogPageContent = {
-  seo: {
-    title: "Blog | Alex Wang",
-    description: "Thoughts, stories and ideas.",
-    image: identity.logo,
-  },
-  subtitle: "Thoughts, stories and ideas.",
-};
+// // Blog (/blog)
+// export const blogPageContent: BlogPageContent = {
+//   seo: {
+//     title: "Blog | Alex Wang",
+//     description: "Thoughts, stories and ideas.",
+//     image: identity.logo,
+//   },
+//   subtitle: "Thoughts, stories and ideas.",
+// };
