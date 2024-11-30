@@ -1,7 +1,6 @@
 ---
 import { Image } from "astro:assets";
 import type { Project } from "../types/config";
-import { Markdown } from "@astropub/md";
 
 type Props = Project;
 
@@ -32,7 +31,7 @@ const { title, description, image, year, url } = Astro.props;
       <span class="opacity-60">· {year}</span>
     </div>
     <div class="opacity-60">
-      <Markdown of={description} />
+      {description}
     </div>
   </div>
 </a>

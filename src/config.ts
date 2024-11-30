@@ -4,7 +4,6 @@ import type {
   Identity,
   AboutPageContent,
   ProjectPageContent,
-  BlogPageContent,
   HomePageContent,
 } from "./types/config";
 
@@ -93,11 +92,11 @@ export const aboutPageContent: AboutPageContent = {
   subtitle: "some information about myself",
   about: {
     description: `
-hi, i’m alex, a 20 y/o cs student at georgia tech on a mission to build, create, and inspire a better world.
-<br/><br/>
-i love building tools that solve meaningful problems, exploring creative outlets like music and photography, and working on projects that help and inspire people. driven by a passion for startups, tech, and creativity, i’m constantly redefining the boundaries of what’s possible.
-<br/><br/>
-i value doing the right thing, being a good human, and fostering genuine relationships. through cs, design, and creativity, i aim to make a positive impact and help change the world.`, // Markdown is supported
+hi, i'm alex, a 20 y/o cs student at georgia tech on a mission to build, create, and inspire a better world.
+
+i love building tools that solve meaningful problems, exploring creative outlets like music and photography, and working on projects that help and inspire people. driven by a passion for startups, tech, and creativity, i'm constantly redefining the boundaries of what's possible.
+
+i value doing the right thing, being a good human, and fostering genuine relationships. through cs, design, and creativity, i aim to make a positive impact and help change the world.`,
     image_l: {
       url: "/pic1.JPG",
       alt: "Left Picture",
@@ -161,22 +160,5 @@ export const projectsPageContent: ProjectPageContent = {
       year: "nov 2024",
       url: "https://github.com/alewoo/codebase-rag-streamlit",
     },
-    // {
-    //   title: "Project 1",
-    //   description: "Project 1 Description",
-    //   image: "/demo-2.jpg",
-    //   year: "2024",
-    //   url: "https://github.com/TimWitzdam",
-    // },
   ],
 };
-
-// // Blog (/blog)
-// export const blogPageContent: BlogPageContent = {
-//   seo: {
-//     title: "Blog | Alex Wang",
-//     description: "Thoughts, stories and ideas.",
-//     image: identity.logo,
-//   },
-//   subtitle: "Thoughts, stories and ideas.",
-// };
