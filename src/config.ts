@@ -9,7 +9,7 @@ import type {
 
 export const identity: Identity = {
   name: "alex wang",
-  logo: "/pfp.jpg",
+  logo: "/pfp2.jpg",
   email: "alexwang2023@gmail.com",
 };
 
@@ -63,12 +63,11 @@ export const socialLinks: SocialLink[] = [
 export const homePageContent: HomePageContent = {
   seo: {
     title: "alex wang",
-    description:
-      "I'm a second-year Computer Science student at Georgia Tech that's passionate about the intersection of technology and business. I'm eager to drive innovation and foster change through my academic and entrepreneurial pursuits. My background in business, along with my involvement in music and other creative endeavors, equips me with a unique perspective to approach problems creatively and strategically. This blend of technical skills, entrepreneurial mindset, and creative experience positions me to excel and make meaningful contributions in the tech industry.",
+    description: "building tools that empower the next generation",
     image: identity.logo,
   },
-  role: "cs @ georgia tech | director of ship it @ startup exchange | building cool things",
-  description: "20 y/o with a passion for startups, tech, and creativity.",
+  role: "cs @ georgia tech | director of ship it @ startup exchange | building the future",
+  description: "designer turned developer",
   socialLinks: socialLinks,
   links: [
     {
@@ -89,7 +88,7 @@ export const aboutPageContent: AboutPageContent = {
     description: "cs student at georgia tech",
     image: identity.logo,
   },
-  subtitle: "some information about myself",
+  subtitle: "my story",
   about: {
     description: `
 hi, i'm alex, a 20 y/o cs student at georgia tech on a mission to build, create, and inspire a better world.
