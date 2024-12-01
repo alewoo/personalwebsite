@@ -4,7 +4,7 @@ import type { Project } from "../types/config";
 
 type Props = Project;
 
-const { title, description, image, year, url } = Astro.props;
+const { title, description, image, year, url, skills } = Astro.props;
 ---
 
 <a
@@ -22,13 +22,20 @@ const { title, description, image, year, url } = Astro.props;
       height={1080}
       src={image}
       alt={title}
-      class="w-full h-full object-cover rounded-lg aspect-video"
+      class="w-full h-full object-cover rounded-lg aspect-video object-top"
     />
   </div>
   <div>
-    <div class="flex items-center gap-1 mb-2">
-      <h2 class="font-medium">{title}</h2>
-      <span class="opacity-60">· {year}</span>
+    <div class="mb-3">
+      <h2 class="font-medium mb-1">{title}</h2>
+      <p class="text-sm opacity-60 mb-2">{year}</p>
+      <div class="flex flex-wrap gap-2">
+        {skills.split(" · ").map((skill) => (
+          <span class="text-xs bg-blue-500/10 text-blue-400 px-2 py-1 rounded-full">
+            {skill}
+          </span>
+        ))}
+      </div>
     </div>
     <div class="opacity-60">
       {description}

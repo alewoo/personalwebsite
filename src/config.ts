@@ -98,11 +98,15 @@ i love building tools that solve meaningful problems, exploring creative outlets
 
 i value doing the right thing, being a good human, and fostering genuine relationships. through cs, design, and creativity, i aim to make a positive impact and help change the world.`,
     image_l: {
-      url: "/pic1.JPG",
+      url: "/pic2.jpg",
       alt: "Left Picture",
     },
+    image_m: {
+      url: "/IMG_8828.JPG",
+      alt: "Middle Picture",
+    },
     image_r: {
-      url: "/pic2.jpg",
+      url: "/IMG_3610.jpg",
       alt: "Right Picture",
     },
   },
@@ -145,20 +149,31 @@ export const projectsPageContent: ProjectPageContent = {
   subtitle: "check out what I've been working on.",
   projects: [
     {
-      title: "bank customer churn predictor",
-      description:
-        "a machine learning model using Python and scikit-learn to predict bank customer churn rates based on customer data and behavior patterns.",
-      image: "/project1.png",
-      year: "nov 2024",
-      url: "https://github.com/alewoo/BankChurnPredictor",
-    },
-    {
       title: "codebase rag chatbot",
+      skills: "python · langchain · pinecone · groq",
       description:
         "an ai-powered chatbot that allows users to query and interact with codebases using natural language, built with pinecone for vector search and groq's llm for intelligent responses.",
       image: "/project5.png",
       year: "nov 2024",
       url: "https://github.com/alewoo/codebase-rag-streamlit",
+    },
+    {
+      title: "bank customer churn predictor",
+      skills: "python · scikit-learn · pandas · matplotlib",
+      description:
+        "a machine learning model using Python and scikit-learn to predict bank customer churn rates based on customer data and behavior patterns.",
+      image: "/project1.png",
+      year: "oct 2024",
+      url: "https://github.com/alewoo/BankChurnPredictor",
+    },
+    {
+      title: "honeycomb",
+      skills: "react · typescript · next.js · firebase · mongoDB",
+      description:
+        "a personalized roadmap platform that helps students land internships by leveraging ai to curate tailored projects, mentors, clubs, and classes based on their career goals.",
+      image: "/honey.png",
+      year: "sep 2023",
+      url: "https://github.com/RishabhK9/honeycomb",
     },
   ],
 };
