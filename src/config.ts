@@ -67,7 +67,7 @@ export const homePageContent: HomePageContent = {
     image: identity.logo,
   },
   role: "cs @ georgia tech | director of ship it @ startup exchange | building the future",
-  description: "designer turned developer",
+  description: "designer turned developer.",
   socialLinks: socialLinks,
   links: [
     {
@@ -91,11 +91,13 @@ export const aboutPageContent: AboutPageContent = {
   subtitle: "my story",
   about: {
     description: `
-hi, i'm alex, a 20 y/o cs student at georgia tech on a mission to build, create, and inspire a better world.
+hi, i'm alex, a 20 y/o cs student at georgia tech who discovered his love for building at 16 — starting with a graphic design community that grew to 1.5k members during covid.
 
-i love building tools that solve meaningful problems, exploring creative outlets like music and photography, and working on projects that help and inspire people. driven by a passion for startups, tech, and creativity, i'm constantly redefining the boundaries of what's possible.
+that spark for creation led me down an unconventional path: from releasing a rap album with 10k+ streams at 17, to leading my varsity squash team to become the #1 public high school team in the nation, to immersing myself in chinese culture through study abroad at 19.
 
-i value doing the right thing, being a good human, and fostering genuine relationships. through cs, design, and creativity, i aim to make a positive impact and help change the world.`,
+these diverse experiences taught me one thing: whether it's building communities, creating music, or leading teams, i'm driven by the desire to innovate and make an impact. now, as a software engineer and entrepreneur, i channel this creative energy into building tools that solve meaningful problems.
+
+i value doing the right thing, being a good human, and fostering genuine relationships. through cs, design, and creativity, i aim to build a better world — redefining the boundaries of what's possible.`,
     image_l: {
       url: "/pic2.jpg",
       alt: "Left Picture",
@@ -147,7 +149,7 @@ export const projectsPageContent: ProjectPageContent = {
     description: "Check out what I've been working on.",
     image: identity.logo,
   },
-  subtitle: "check out what I've been working on.",
+  subtitle: "check out what I've been working on",
   projects: [
     {
       title: "codebase rag chatbot",
