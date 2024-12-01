@@ -113,33 +113,63 @@ i value doing the right thing, being a good human, and fostering genuine relatio
       alt: "Right Picture",
     },
   },
-  // work: {
-  //   description: `I've worked with a variety of technologies and tools to build cool things. Here are some of the projects I've worked on.`, // Markdown is supported
-  //   items: [
-  //     {
-  //       title: "Software Developer",
-  //       company: {
-  //         name: "Freelance",
-  //         image: "/logo.webp",
-  //         url: "https://github.com/TimWitzdam",
-  //       },
-  //       date: "2021 - Present",
-  //     },
-  //     {
-  //       title: "Software Developer",
-  //       company: {
-  //         name: "Freelance",
-  //         image: "/logo.webp",
-  //         url: "https://github.com/TimWitzdam",
-  //       },
-  //       date: "2019 - 2021",
-  //     },
-  //   ],
-  // },
-  // connect: {
-  //   description: `I'm always interested in meeting new people and learning new things. Feel free to connect with me on any of the following platforms.`, // Markdown is supported
-  //   links: socialLinks,
-  // },
+  timeline: {
+    items: [
+      {
+        year: "2024",
+        title: "director of ship it @ startup exchange",
+        description:
+          "leading georgia tech's premier startup organization to foster innovation across campus.",
+      },
+      {
+        year: "2024",
+        title: "founder & software engineer @ unpackd",
+        description:
+          "building full-stack AI-driven educational platform revolutionizing the way people learn.",
+      },
+      {
+        year: "2024",
+        title: "study abroad in china",
+        description:
+          "immersed in chinese culture and language while exploring new perspectives.",
+      },
+      {
+        year: "2024",
+        title: "founding fellow @ catalyst xl",
+        description:
+          "4-week startup cohort diving deep into venture building and startup strategy.",
+      },
+      {
+        year: "2024",
+        title: "software engineer intern @ driving forward",
+        description:
+          "developed generative ai chatbot strategy using python and NLP models.",
+      },
+      {
+        year: "2023",
+        title: "software engineer intern @ develop for good",
+        description: "refactored nonprofit web app's backend to C#.",
+      },
+      // {
+      //   year: "2023",
+      //   title: "#1 public high school squash team",
+      //   description:
+      //     "led and captained varsity squash team to become the top public high school team in the nation.",
+      // },
+      // {
+      //   year: "2022",
+      //   title: "woo szn by ale woo",
+      //   description:
+      //     "released rap album reaching 10k+ streams, exploring music production and creativity.",
+      // },
+      {
+        year: "2020",
+        title: "founder @ design center",
+        description:
+          "built and scaled a graphic design community to 1.5k members during covid.",
+      },
+    ],
+  },
 };
 
 // Projects (/projects)

@@ -4,6 +4,7 @@ import Layout from "../layouts/Layout.astro";
 import { aboutPageContent } from "../config";
 import ResumeItem from "../components/ResumeItem.astro";
 import SocialLinkBox from "../components/SocialLinkBox.astro";
+import Timeline from "../components/Timeline.astro";
 ---
 
 <Layout seo={aboutPageContent.seo}>
@@ -36,5 +37,6 @@ import SocialLinkBox from "../components/SocialLinkBox.astro";
         class="w-[250px] h-[250px] object-cover rounded-xl rotate-6"
       />
     </div>
+    <Timeline items={aboutPageContent.timeline.items} />
   </section>
 </Layout>
