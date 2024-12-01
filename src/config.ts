@@ -102,10 +102,12 @@ i value doing the right thing, being a good human, and fostering genuine relatio
     },
     image_m: {
       url: "/IMG_8828.JPG",
+      // url: "/SU24 Maker Venture Photo 2.jpg",
       alt: "Middle Picture",
     },
     image_r: {
       url: "/IMG_3610.jpg",
+      // url: "/SU24 Maker Venture Photo 2.jpg",
       alt: "Right Picture",
     },
   },
