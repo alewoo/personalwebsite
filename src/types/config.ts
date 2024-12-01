@@ -54,6 +54,10 @@ export interface AboutPageContent {
       url: string;
       alt: string;
     };
+    image_m: {
+      url: string;
+      alt: string;
+    };
     image_r: {
       url: string;
       alt: string;
@@ -75,6 +79,7 @@ export type Project = {
   image: string;
   year: string;
   url: string;
+  skills: string;
 };
 
 export type ProjectPageContent = {
