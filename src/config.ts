@@ -143,7 +143,7 @@ i value doing the right thing, being a good human, and fostering genuine relatio
         year: "2024",
         title: "software engineer intern @ driving forward",
         description:
-          "developed generative ai chatbot strategy using python and NLP models.",
+          "developed generative ai chatbot to handle healthcare inquiries using python and NLP models.",
       },
       {
         year: "2023",
