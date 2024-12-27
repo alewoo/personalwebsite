@@ -116,37 +116,42 @@ i value doing the right thing, being a good human, and fostering genuine relatio
   timeline: {
     items: [
       {
-        year: "2024",
+        year: "nov 2024 - present",
+        title: "swe resident @ headstarter",
+        description: "building ai/full-stack projects.",
+      },
+      {
+        year: "aug 2024 - present",
         title: "director of ship it @ startup exchange",
         description:
           "leading georgia tech's premier startup organization to foster innovation across campus.",
       },
       {
-        year: "2024",
+        year: "may 2024 - aug 2024",
         title: "founder & software engineer @ unpackd",
         description:
           "building full-stack AI-driven educational platform revolutionizing the way people learn.",
       },
       {
-        year: "2024",
+        year: "may 2024 - aug 2024",
         title: "study abroad in china",
         description:
           "immersed in chinese culture and language while exploring new perspectives.",
       },
       {
-        year: "2024",
+        year: "apr 2024 - jun 2024",
         title: "founding fellow @ catalyst xl",
         description:
-          "4-week startup cohort diving deep into venture building and startup strategy.",
+          "4-week startup cohort diving deep into building startups.",
       },
       {
-        year: "2024",
+        year: "jan 2024 - apr 2024",
         title: "software engineer intern @ driving forward",
         description:
           "developed generative ai chatbot to handle healthcare inquiries using python and NLP models.",
       },
       {
-        year: "2023",
+        year: "nov 2023 - feb 2024",
         title: "software engineer intern @ develop for good",
         description: "refactored nonprofit web app's backend to C#.",
       },
@@ -162,12 +167,12 @@ i value doing the right thing, being a good human, and fostering genuine relatio
       //   description:
       //     "released rap album reaching 10k+ streams, exploring music production and creativity.",
       // },
-      {
-        year: "2020",
-        title: "founder @ design center",
-        description:
-          "built and scaled a graphic design community to 1.5k members during covid.",
-      },
+      // {
+      //   year: "2020",
+      //   title: "founder @ design center",
+      //   description:
+      //     "built and scaled a graphic design community to 1.5k members during covid.",
+      // },
     ],
   },
 };
