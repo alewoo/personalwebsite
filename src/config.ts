@@ -66,7 +66,7 @@ export const homePageContent: HomePageContent = {
     description: "building tools that empower the next generation",
     image: identity.logo,
   },
-  role: "cs @ georgia tech | director of ship it @ startup exchange | building the future",
+  role: "cs @ georgia tech | ai + hci researcher | director of ship it @ startup exchange",
   description: "designer turned developer.",
   socialLinks: socialLinks,
   links: [
@@ -115,6 +115,12 @@ i value doing the right thing, being a good human, and fostering genuine relatio
   },
   timeline: {
     items: [
+      {
+        year: "jan 2025 - present",
+        title: "ai + hci researcher",
+        description:
+          "conducting research at the intersection of AI and human-computer interaction to build more intuitive and user-centric AI systems.",
+      },
       {
         year: "nov 2024 - present",
         title: "swe resident @ headstarter",
@@ -187,6 +193,15 @@ export const projectsPageContent: ProjectPageContent = {
   subtitle: "check out what I've been working on",
   projects: [
     {
+      title: "cassandra",
+      skills: "python · jupyter · scikit-learn · yfinance",
+      description:
+        "a market analysis tool leveraging machine learning to detect potential market crashes and anomalies, providing real-time risk assessments and trading recommendations based on multiple market indicators.",
+      image: "/cassandra.png",
+      year: "jan 2025",
+      url: "https://github.com/alewoo/cassandra",
+    },
+    {
       title: "codebase rag chatbot",
       skills: "python · langchain · pinecone · groq",
       description:
@@ -212,6 +227,15 @@ export const projectsPageContent: ProjectPageContent = {
       image: "/honey.png",
       year: "sep 2023",
       url: "https://github.com/RishabhK9/honeycomb",
+    },
+    {
+      title: "unpackd",
+      skills: "react · typescript · openai · langchain",
+      description:
+        "an ai-powered book insights platform that generates personalized action plans from non-fiction books, helping users learn more effectively in less time.",
+      image: "/unpackd.png",
+      year: "july 2024",
+      url: "https://unpackd.net",
     },
   ],
 };
