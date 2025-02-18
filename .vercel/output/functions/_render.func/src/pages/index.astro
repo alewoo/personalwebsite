@@ -21,10 +21,27 @@ import Link from "../components/Link.astro";
     <h1 class="font-bold text-3xl mb-3 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
       {identity.name}
     </h1>
-    <p class="opacity-60 mb-5 whitespace-pre-line">{homePageContent.role}</p>
-    <p class="mb-4 whitespace-pre-line">
-      {homePageContent.description}
+    <p class="opacity-60 mb-5">{homePageContent.role}</p>
+    <p class="mb-6">
+      {homePageContent.description.split('\n\n')[0]}
     </p>
+    <div class="mb-6">
+      <p class="text-gray-300 mb-2">currently:</p>
+      <ul class="space-y-1 opacity-80">
+        <li class="flex items-start">
+          <span class="text-blue-400 mr-2">•</span>
+          building datematch.lol (250+ users)
+        </li>
+        <li class="flex items-start">
+          <span class="text-blue-400 mr-2">•</span>
+          researching human-ai interaction @ gt
+        </li>
+        <li class="flex items-start">
+          <span class="text-blue-400 mr-2">•</span>
+          leading ship it @ startup exchange
+        </li>
+      </ul>
+    </div>
     <div class="flex items-center gap-4 group w-fit mb-4">
       {
         homePageContent.links.map((link) => (

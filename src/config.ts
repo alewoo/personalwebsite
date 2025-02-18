@@ -26,10 +26,6 @@ export const navBarLinks: NavBarLink[] = [
     title: "projects",
     url: "/projects",
   },
-  // {
-  //   title: "blog",
-  //   url: "/blog",
-  // },
 ];
 
 export const socialLinks: SocialLink[] = [

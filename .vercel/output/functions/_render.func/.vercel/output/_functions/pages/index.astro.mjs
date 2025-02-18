@@ -2,7 +2,7 @@
 import { c as createComponent, r as renderTemplate, m as maybeRenderHead, s as spreadAttributes, b as addAttribute, f as renderComponent, e as createAstro, u as unescapeHTML, F as Fragment } from '../chunks/astro/server_B6IEuQq7.mjs';
 import 'kleur/colors';
 import { $ as $$Image } from '../chunks/_astro_assets_BHa2hjh-.mjs';
-import { i as identity, h as homePageContent, $ as $$Layout } from '../chunks/Layout_DeRPLIK7.mjs';
+import { i as identity, h as homePageContent, $ as $$Layout } from '../chunks/Layout_Y7XETk4p.mjs';
 import { getIconData, iconToSVG } from '@iconify/utils';
 export { renderers } from '../renderers.mjs';
 
@@ -69,7 +69,7 @@ const $$Astro$1 = createAstro();
 const $$SocialLink = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
   Astro2.self = $$SocialLink;
-  const { title, url, icon, external } = Astro2.props;
+  const { url, icon, external } = Astro2.props;
   return renderTemplate`${maybeRenderHead()}<a${addAttribute(url, "href")} class="flex items-center gap-3 opacity-60 
          group-hover:opacity-30 hover:!opacity-100 
          transition-all duration-300 transform hover:scale-110"${addAttribute(external ? "_blank" : "_self", "target")}> ${renderComponent($$result, "Icon", $$Icon, { "name": icon, "width": 25, "height": 25 })} <!-- <FontAwesomeIcon icon={faXmark} width={25} height={25} /> --> <div> <!-- <p>{title}</p> --> </div> </a>`;
@@ -84,7 +84,13 @@ const $$Link = createComponent(($$result, $$props, $$slots) => {
 }, "/Users/alexwang/Code/WebDev/astro-minimal-portfolio-template/src/components/Link.astro", void 0);
 
 const $$Index = createComponent(($$result, $$props, $$slots) => {
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "seo": homePageContent.seo }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<section class="mt-10 max-w-2xl mx-auto px-6"> <div class="w-[100px] h-[100px] relative mb-8"> <div class="absolute inset-0 bg-blue-500/30 blur-2xl rounded-full scale-130"></div> ${renderComponent($$result2, "Image", $$Image, { "src": identity.logo, "alt": identity.name, "width": 100, "height": 100, "class": "rounded-full w-[100px] h-[100px] object-cover relative z-10" })} </div> <h1 class="font-bold text-3xl mb-3 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent"> ${identity.name} </h1> <p class="opacity-60 mb-5 whitespace-pre-line">${homePageContent.role}</p> <p class="mb-4 whitespace-pre-line"> ${homePageContent.description} </p> <div class="flex items-center gap-4 group w-fit mb-4"> ${homePageContent.links.map((link) => renderTemplate`${renderComponent($$result2, "Link", $$Link, { "text": link.title, "href": link.url, "external": link.external })}`)} </div> <div class="group flex flex-row gap-2 w-fit"> ${homePageContent.socialLinks.map((link) => renderTemplate`${renderComponent($$result2, "SocialLink", $$SocialLink, { "title": link.title, "url": link.url, "icon": link.icon, "external": link.external })}`)} </div> </section> ` })}`;
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "seo": homePageContent.seo }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<section class="mt-10 max-w-2xl mx-auto px-6"> <div class="w-[100px] h-[100px] relative mb-8"> <div class="absolute inset-0 bg-blue-500/30 blur-2xl rounded-full scale-130"></div> ${renderComponent($$result2, "Image", $$Image, { "src": identity.logo, "alt": identity.name, "width": 100, "height": 100, "class": "rounded-full w-[100px] h-[100px] object-cover relative z-10" })} </div> <h1 class="font-bold text-3xl mb-3 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent"> ${identity.name} </h1> <p class="opacity-60 mb-5">${homePageContent.role}</p> <p class="mb-6"> ${homePageContent.description.split("\n\n")[0]} </p> <div class="mb-6"> <p class="text-gray-300 mb-2">currently:</p> <ul class="space-y-1 opacity-80"> <li class="flex items-start"> <span class="text-blue-400 mr-2">•</span>
+building datematch.lol (250+ users)
+</li> <li class="flex items-start"> <span class="text-blue-400 mr-2">•</span>
+researching human-ai interaction @ gt
+</li> <li class="flex items-start"> <span class="text-blue-400 mr-2">•</span>
+leading ship it @ startup exchange
+</li> </ul> </div> <div class="flex items-center gap-4 group w-fit mb-4"> ${homePageContent.links.map((link) => renderTemplate`${renderComponent($$result2, "Link", $$Link, { "text": link.title, "href": link.url, "external": link.external })}`)} </div> <div class="group flex flex-row gap-2 w-fit"> ${homePageContent.socialLinks.map((link) => renderTemplate`${renderComponent($$result2, "SocialLink", $$SocialLink, { "title": link.title, "url": link.url, "icon": link.icon, "external": link.external })}`)} </div> </section> ` })}`;
 }, "/Users/alexwang/Code/WebDev/astro-minimal-portfolio-template/src/pages/index.astro", void 0);
 
 const $$file = "/Users/alexwang/Code/WebDev/astro-minimal-portfolio-template/src/pages/index.astro";
