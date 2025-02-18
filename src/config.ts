@@ -67,7 +67,8 @@ export const homePageContent: HomePageContent = {
     image: identity.logo,
   },
   role: "cs @ georgia tech | ai + hci researcher | director of ship it @ startup exchange",
-  description: "designer turned developer.",
+  description:
+    "i combine design, code, and ai to build products that matter.\n\ncurrently:\n• building datematch.lol (250+ users)\n• researching human-ai interaction @ gt\n• leading ship it @ startup exchange\n",
   socialLinks: socialLinks,
   links: [
     {
@@ -91,13 +92,32 @@ export const aboutPageContent: AboutPageContent = {
   subtitle: "my story",
   about: {
     description: `
-hi, i'm alex, a 20 y/o cs student at georgia tech who discovered his love for building at 16 — starting with a graphic design community that grew to 1.5k members during covid.
+hi, i'm alex 👋
 
-that spark for creation led me down an unconventional path: from releasing a rap album with 10k+ streams at 17, to leading my varsity squash team to become the #1 public high school team in the nation, to immersing myself in chinese culture through study abroad at 19.
+i discovered my love for building at 16 — starting with a graphic design 
+community that grew to 1.5k members during covid.
 
-these diverse experiences taught me one thing: whether it's building communities, creating music, or leading teams, i'm driven by the desire to innovate and make an impact. now, as a software engineer and entrepreneur, i channel this creative energy into building tools that solve meaningful problems.
+that spark for creation led me down an unconventional path:
+• released music with 10k+ streams at 17
+• led varsity squash team to #1 public hs ranking
+• studied abroad in china at 19
 
-i value doing the right thing, being a good human, and fostering genuine relationships. through cs, design, and creativity, i aim to build a better world — redefining the boundaries of what's possible.`,
+now, i build products that matter:
+• launched datematch.lol in 3 days (250+ users)
+• exploring ai + hci research @ georgia tech
+• leading ship it @ startup exchange
+• building tools at the intersection of human-ai interaction
+
+these experiences taught me one thing: whether it's building 
+communities, creating music, or launching products, i'm driven by the 
+desire to innovate and make an impact.
+
+i value doing the right thing, being a good human, and fostering genuine 
+relationships. through design, code, and creativity, i aim to build a 
+better world — redefining the boundaries of what's possible.
+
+currently building in atlanta.
+open to conversations and opportunities.`,
     image_l: {
       url: "/pic2.jpg",
       alt: "Left Picture",
@@ -121,46 +141,46 @@ i value doing the right thing, being a good human, and fostering genuine relatio
         description:
           "conducting research at the intersection of AI and human-computer interaction to build more intuitive and user-centric AI systems.",
       },
-      {
-        year: "nov 2024 - present",
-        title: "swe resident @ headstarter",
-        description: "building ai/full-stack projects.",
-      },
+      // {
+      //   year: "nov 2024 - present",
+      //   title: "swe resident @ headstarter",
+      //   description: "building ai/full-stack projects.",
+      // },
       {
         year: "aug 2024 - present",
         title: "director of ship it @ startup exchange",
         description:
           "leading georgia tech's premier startup organization to foster innovation across campus.",
       },
-      {
-        year: "may 2024 - aug 2024",
-        title: "founder & software engineer @ unpackd",
-        description:
-          "building full-stack AI-driven educational platform revolutionizing the way people learn.",
-      },
-      {
-        year: "may 2024 - aug 2024",
-        title: "study abroad in china",
-        description:
-          "immersed in chinese culture and language while exploring new perspectives.",
-      },
-      {
-        year: "apr 2024 - jun 2024",
-        title: "founding fellow @ catalyst xl",
-        description:
-          "4-week startup cohort diving deep into building startups.",
-      },
-      {
-        year: "jan 2024 - apr 2024",
-        title: "software engineer intern @ driving forward",
-        description:
-          "developed generative ai chatbot to handle healthcare inquiries using python and NLP models.",
-      },
-      {
-        year: "nov 2023 - feb 2024",
-        title: "software engineer intern @ develop for good",
-        description: "refactored nonprofit web app's backend to C#.",
-      },
+      // {
+      //   year: "may 2024 - aug 2024",
+      //   title: "founder & software engineer @ unpackd",
+      //   description:
+      //     "building full-stack AI-driven educational platform revolutionizing the way people learn.",
+      // },
+      // {
+      //   year: "may 2024 - aug 2024",
+      //   title: "study abroad in china",
+      //   description:
+      //     "immersed in chinese culture and language while exploring new perspectives.",
+      // },
+      // {
+      //   year: "apr 2024 - jun 2024",
+      //   title: "founding fellow @ catalyst xl",
+      //   description:
+      //     "4-week startup cohort diving deep into building startups.",
+      // },
+      // {
+      //   year: "jan 2024 - apr 2024",
+      //   title: "software engineer intern @ driving forward",
+      //   description:
+      //     "developed generative ai chatbot to handle healthcare inquiries using python and NLP models.",
+      // },
+      // {
+      //   year: "nov 2023 - feb 2024",
+      //   title: "software engineer intern @ develop for good",
+      //   description: "refactored nonprofit web app's backend to C#.",
+      // },
       // {
       //   year: "2023",
       //   title: "#1 public high school squash team",
@@ -190,52 +210,62 @@ export const projectsPageContent: ProjectPageContent = {
     description: "Check out what I've been working on.",
     image: identity.logo,
   },
-  subtitle: "check out what I've been working on",
+  subtitle: "building tools that solve real problems.",
   projects: [
     {
-      title: "cassandra",
-      skills: "python · jupyter · scikit-learn · yfinance",
+      title: "datematch",
+      skills: "next.js · typescript · supabase · openai",
       description:
-        "a market analysis tool leveraging machine learning to detect potential market crashes and anomalies, providing real-time risk assessments and trading recommendations based on multiple market indicators.",
-      image: "/cassandra.png",
-      year: "jan 2025",
-      url: "https://github.com/alewoo/cassandra",
+        "reimagining college dating through personality analytics. built and launched in 3 days, reaching 250+ users and 40+ signups in its first week at georgia tech.",
+      image: "/datematch.png",
+      year: "feb 2025",
+      url: "https://datematch.lol",
     },
-    {
-      title: "codebase rag chatbot",
-      skills: "python · langchain · pinecone · groq",
-      description:
-        "an ai-powered chatbot that allows users to query and interact with codebases using natural language, built with pinecone for vector search and groq's llm for intelligent responses.",
-      image: "/project5.png",
-      year: "nov 2024",
-      url: "https://github.com/alewoo/codebase-rag-streamlit",
-    },
-    {
-      title: "bank customer churn predictor",
-      skills: "python · scikit-learn · pandas · matplotlib",
-      description:
-        "a machine learning model using Python and scikit-learn to predict bank customer churn rates based on customer data and behavior patterns.",
-      image: "/project1.png",
-      year: "oct 2024",
-      url: "https://github.com/alewoo/BankChurnPredictor",
-    },
-    {
-      title: "honeycomb",
-      skills: "react · typescript · next.js · firebase · mongoDB",
-      description:
-        "a personalized roadmap platform that helps students land internships by leveraging ai to curate tailored projects, mentors, clubs, and classes based on their career goals.",
-      image: "/honey.png",
-      year: "sep 2023",
-      url: "https://github.com/RishabhK9/honeycomb",
-    },
-    {
-      title: "unpackd",
-      skills: "react · typescript · openai · langchain",
-      description:
-        "an ai-powered book insights platform that generates personalized action plans from non-fiction books, helping users learn more effectively in less time.",
-      image: "/unpackd.png",
-      year: "july 2024",
-      url: "https://unpackd.net",
-    },
+    // },
+    // {
+    //   title: "cassandra",
+    //   skills: "python · jupyter · scikit-learn · yfinance",
+    //   description:
+    //     "a market analysis tool leveraging machine learning to detect potential market crashes and anomalies, providing real-time risk assessments and trading recommendations based on multiple market indicators.",
+    //   image: "/cassandra.png",
+    //   year: "jan 2025",
+    //   url: "https://github.com/alewoo/cassandra",
+    // },
+    // {
+    //   title: "codebase rag chatbot",
+    //   skills: "python · langchain · pinecone · groq",
+    //   description:
+    //     "an ai-powered chatbot that allows users to query and interact with codebases using natural language, built with pinecone for vector search and groq's llm for intelligent responses.",
+    //   image: "/project5.png",
+    //   year: "nov 2024",
+    //   url: "https://github.com/alewoo/codebase-rag-streamlit",
+    // },
+    // {
+    //   title: "bank customer churn predictor",
+    //   skills: "python · scikit-learn · pandas · matplotlib",
+    //   description:
+    //     "a machine learning model using Python and scikit-learn to predict bank customer churn rates based on customer data and behavior patterns.",
+    //   image: "/project1.png",
+    //   year: "oct 2024",
+    //   url: "https://github.com/alewoo/BankChurnPredictor",
+    // },
+    // {
+    //   title: "honeycomb",
+    //   skills: "react · typescript · next.js · firebase · mongoDB",
+    //   description:
+    //     "a personalized roadmap platform that helps students land internships by leveraging ai to curate tailored projects, mentors, clubs, and classes based on their career goals.",
+    //   image: "/honey.png",
+    //   year: "sep 2023",
+    //   url: "https://github.com/RishabhK9/honeycomb",
+    // },
+    // {
+    //   title: "unpackd",
+    //   skills: "react · typescript · openai · langchain",
+    //   description:
+    //     "an ai-powered book insights platform that generates personalized action plans from non-fiction books, helping users learn more effectively in less time.",
+    //   image: "/unpackd.png",
+    //   year: "july 2024",
+    //   url: "https://unpackd.net",
+    // },
   ],
 };
