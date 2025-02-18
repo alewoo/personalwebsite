@@ -5,7 +5,13 @@
   "framework": "astro",
   "functions": {
     "api/*.js": {
-      "memory": 1024
+      "memory": 3008,
+      "maxDuration": 60
     }
+  },
+  "images": {
+    "sizes": [640, 750, 828, 1080, 1200],
+    "domains": ["localhost"],
+    "minimumCacheTTL": 60
   }
 }

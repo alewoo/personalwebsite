@@ -1,12 +1,15 @@
+import { N as NOOP_MIDDLEWARE_HEADER, D as DEFAULT_404_COMPONENT } from './astro/server_DLP-nXmf.mjs';
 import { parse } from 'devalue';
 import { escape } from 'html-escaper';
-import { D as DEFAULT_404_COMPONENT } from './astro/server__ZOCFpQU.mjs';
+
+const NOOP_MIDDLEWARE_FN = async (_ctx, next) => {
+  const response = await next();
+  response.headers.set(NOOP_MIDDLEWARE_HEADER, "true");
+  return response;
+};
 
 const ACTION_QUERY_PARAMS = {
-  actionName: "_astroAction",
-  actionPayload: "_astroActionPayload",
-  actionRedirect: "_astroActionRedirect"
-};
+  actionName: "_astroAction"};
 
 const __vite_import_meta_env__ = {"ASSETS_PREFIX": undefined, "BASE_URL": "/", "DEV": false, "MODE": "production", "PROD": true, "SITE": undefined, "SSR": true};
 const codeToStatusMap = {
@@ -275,4 +278,4 @@ const default404Instance = {
   default: default404Page
 };
 
-export { DEFAULT_404_ROUTE as D, default404Instance as a, deserializeActionResult as d, ensure404Route as e, getActionQueryString as g };
+export { DEFAULT_404_ROUTE as D, NOOP_MIDDLEWARE_FN as N, default404Instance as a, deserializeActionResult as d, ensure404Route as e, getActionQueryString as g };

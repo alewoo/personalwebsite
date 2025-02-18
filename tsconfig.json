@@ -1,11 +1,16 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "verbatimModuleSyntax": true,
-    "types": ["astro/client"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
-    }
-  }
+    },
+    "jsx": "preserve",
+    "jsxImportSource": "astro",
+    "verbatimModuleSyntax": true,
+    "types": ["astro/client", "astro/env"],
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", ".vercel"]
 }

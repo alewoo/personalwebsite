@@ -7,11 +7,8 @@ export default defineConfig({
   integrations: [tailwind(), icon()],
   output: "server",
   adapter: vercel({
-    analytics: true,
-    imageService: true,
-    devImageService: "sharp",
-    webAnalytics: {
-      enabled: true,
-    },
+    imageService: false,
+    webAnalytics: false,
+    functionPerRoute: false,
   }),
 });

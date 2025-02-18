@@ -1,5 +1,5 @@
-import { A as AstroError, h as NoImageMetadata, F as FailedToFetchRemoteImageDimensions, j as ExpectedImageOptions, k as ExpectedImage, l as ExpectedNotESMImage, r as resolveSrc, m as isRemoteImage, n as isESMImportedImage, o as isLocalService, D as DEFAULT_HASH_PROPS, p as InvalidImageService, q as ImageMissingAlt } from './astro/assets-service_Cu8TfNg0.mjs';
-import { c as createComponent, r as renderTemplate, m as maybeRenderHead, b as addAttribute, s as spreadAttributes, e as createAstro } from './astro/server__ZOCFpQU.mjs';
+import { A as AstroError, g as NoImageMetadata, F as FailedToFetchRemoteImageDimensions, h as ExpectedImageOptions, j as ExpectedImage, k as ExpectedNotESMImage, r as resolveSrc, l as isRemoteImage, i as isRemotePath, m as isESMImportedImage, n as isLocalService, D as DEFAULT_HASH_PROPS, o as InvalidImageService, p as ImageMissingAlt } from './astro/assets-service_CT66fKWp.mjs';
+import { c as createComponent, a as createAstro, m as maybeRenderHead, d as addAttribute, s as spreadAttributes, r as renderTemplate } from './astro/server_DLP-nXmf.mjs';
 import * as mime from 'mrmime';
 import 'clsx';
 
@@ -355,7 +355,7 @@ const JPG = {
     while (input.length) {
       const i = readUInt16BE(input, 0);
       if (input[i] !== 255) {
-        input = input.slice(1);
+        input = input.slice(i);
         continue;
       }
       if (isEXIF(input)) {
@@ -841,8 +841,8 @@ async function getConfiguredImageService() {
   if (!globalThis?.astroAsset?.imageService) {
     const { default: service } = await import(
       // @ts-expect-error
-      './build-service_DUjaXQC1.mjs'
-    ).catch((e) => {
+      './astro/assets-service_CT66fKWp.mjs'
+    ).then(n => n.Z).catch((e) => {
       const error = new AstroError(InvalidImageService);
       error.cause = e;
       throw error;
@@ -878,7 +878,7 @@ async function getImage$1(options, imageConfig) {
     ...options,
     src: await resolveSrc(options.src)
   };
-  if (options.inferSize && isRemoteImage(resolvedOptions.src)) {
+  if (options.inferSize && isRemoteImage(resolvedOptions.src) && isRemotePath(resolvedOptions.src)) {
     const result = await inferRemoteSize(resolvedOptions.src);
     resolvedOptions.width ??= result.width;
     resolvedOptions.height ??= result.height;
@@ -1009,7 +1009,7 @@ const $$Picture = createComponent(async ($$result, $$props, $$slots) => {
   })} <img${addAttribute(fallbackImage.src, "src")}${spreadAttributes(imgAdditionalAttributes)}${spreadAttributes(fallbackImage.attributes)}> </picture>`;
 }, "/Users/alexwang/Code/WebDev/astro-minimal-portfolio-template/node_modules/astro/components/Picture.astro", void 0);
 
-const imageConfig = {"service":{"entrypoint":"@astrojs/vercel/build-image-service","config":{"sizes":[640,750,828,1080,1200,1920,2048,3840],"domains":[],"remotePatterns":[]}},"domains":[],"remotePatterns":[]};
+const imageConfig = {"service":{"entrypoint":"astro/assets/services/sharp","config":{}},"domains":[],"remotePatterns":[]};
 					const getImage = async (options) => await getImage$1(options, imageConfig);
 
 export { $$Image as $, getConfiguredImageService as g, imageConfig as i };

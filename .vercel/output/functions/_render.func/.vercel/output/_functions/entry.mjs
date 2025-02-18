@@ -1,7 +1,6 @@
 import { renderers } from './renderers.mjs';
-import { c as createExports } from './chunks/entrypoint_CnT8_onq.mjs';
-import { manifest } from './manifest_HCqeGU_-.mjs';
-import { onRequest } from './_noop-middleware.mjs';
+import { c as createExports } from './chunks/entrypoint_YW3-6y1m.mjs';
+import { manifest } from './manifest_B4UI2DOG.mjs';
 
 const _page0 = () => import('./pages/_image.astro.mjs');
 const _page1 = () => import('./pages/about.astro.mjs');
@@ -15,15 +14,14 @@ const pageMap = new Map([
     ["src/pages/index.astro", _page3]
 ]);
 const serverIslandMap = new Map();
-
 const _manifest = Object.assign(manifest, {
     pageMap,
     serverIslandMap,
     renderers,
-    middleware: onRequest
+    middleware: () => import('./_noop-middleware.mjs')
 });
 const _args = {
-    "middlewareSecret": "8310261e-00e5-4c29-a5af-913c76cdaffb",
+    "middlewareSecret": "cb5bbd7c-5f73-4911-80b2-0d394f926d34",
     "skewProtection": false
 };
 const _exports = createExports(_manifest, _args);

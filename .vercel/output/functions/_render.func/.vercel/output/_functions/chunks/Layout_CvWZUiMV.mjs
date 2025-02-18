@@ -1,13 +1,11 @@
-import { c as createComponent, r as renderTemplate, a as renderSlot, b as addAttribute, d as renderHead, e as createAstro } from './astro/server__ZOCFpQU.mjs';
+import { c as createComponent, a as createAstro, r as renderTemplate, b as renderSlot, d as addAttribute, e as renderHead } from './astro/server_DLP-nXmf.mjs';
 import 'kleur/colors';
 import 'clsx';
 /* empty css                         */
 
 const identity = {
   name: "alex wang",
-  logo: "/pfp2.jpg",
-  email: "alexwang2023@gmail.com"
-};
+  logo: "/pfp2.jpg"};
 const navBarLinks = [
   {
     title: "home",
