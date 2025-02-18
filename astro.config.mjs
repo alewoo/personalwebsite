@@ -6,9 +6,5 @@ import vercel from "@astrojs/vercel/serverless";
 export default defineConfig({
   integrations: [tailwind(), icon()],
   output: "server",
-  adapter: vercel({
-    imageService: false,
-    webAnalytics: false,
-    functionPerRoute: false,
-  }),
+  adapter: vercel(),
 });
